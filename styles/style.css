@@ -35,9 +35,26 @@ button {
   /* Challenge: can you make the navigation links orange on hover? */
 }
 
-/* Buttons */
+.button-primary {
+    background: #ce5f31;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
 
-/* INSERT BUTTON STYLES HERE */
+.button-primary:hover,
+.button-primary:focus {
+  background: #ef7f52;
+}
+
+.button-secondary {
+    background: white;
+    color: #ce5f31;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}/* INSERT BUTTON STYLES HERE */
 
 /* Alert */
 
@@ -67,7 +84,7 @@ button {
 /* Jumbotron */
 
 .jumbotron {
-  background-image: url("../images/header.jpg");
+  background-image: url("../images/header-bike.jpg");
   border-radius: 0;
   color: #fff;
 }
@@ -97,8 +114,27 @@ button {
 
 /* Article */
 
+.article_learnmore {
+  display:flex;
+  justify-content: space-between;
+}
+
+.article_learnmore .article {
+  width: 48%;
+}
+.article_learnmore .article:hover {
+  background: #a88e83;
+}
 .article {
+   display: flex;
+    border: 1px solid #d4cbc7;
+    padding: 10px;
+    border-radius: 4px;
   margin-bottom: 2em;
+}
+
+.article__body {
+  margin-left: 10px;
 }
 
 .article__image {
